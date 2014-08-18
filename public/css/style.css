@@ -1,0 +1,307 @@
+@import url("http://fonts.googleapis.com/css?family=Quicksand");
+/*
+ * Nib provides a CSS reset
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+/*
+ * Store some colors as variables
+ */
+body {
+  font-family: 'Georgia';
+  background-color: #faf9f0;
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+header {
+  font-family: 'Quicksand';
+  padding: 50px 10px;
+  font-size: 8em;
+  text-align: center;
+/*
+   * `darken` is a Stylus built-in function
+   */
+  background-color: #fa5b4d;
+  text-shadow: 10px 0px 80px #df1806;
+}
+#mainContainer {
+  position: relative;
+  width: 960px;
+  height: 100%;
+  margin: auto;
+}
+#mainContainer input {
+  float: left;
+  clear: both;
+  margin: 10px 0px 0px 0px;
+  width: 100%;
+}
+#loging,
+#suscribe {
+  width: 300px;
+  position: absolute;
+  left: 330px;
+  margin-top: 20%;
+  display: none;
+}
+.container {
+  width: 960px;
+  height: 500px;
+  margin: 0px auto;
+  overflow: hidden;
+  z-index: -1;
+}
+.main-content {
+  float: left;
+  width: 460px;
+}
+.main-content p {
+  margin-bottom: 20px;
+}
+p {
+  line-height: 1.8;
+}
+footer {
+  width: 500px;
+  margin: 50px auto;
+  border-top: 1px dotted #ccc;
+  padding-top: 5px;
+  font-size: 1em;
+}
+#box {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: #dcdcdc;
+  margin-top: 20px;
+}
+#logInfo {
+  float: right;
+  text-align: right;
+  position: relative;
+  margin-right: 2%;
+  top: -80px;
+}
+#logInfo h4 {
+  font-size: 0.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#mouseHandler {
+  position: absolute;
+  height: 90px;
+  width: 960px;
+  margin: 0px auto;
+}
+#navBar {
+  position: relative;
+  top: -101px;
+  height: 192px;
+  width: 960px;
+  margin: 0px auto;
+}
+#mouseHandler div {
+  position: relative;
+  height: 90px;
+  width: 160px;
+  display: inline-block;
+  margin: 0px 16px;
+}
+#navBar div {
+  position: relative;
+  height: 192px;
+  width: 192px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: -1;
+}
+#navBar h2 {
+  position: absolute;
+  margin-top: 120px;
+  font-size: 2.6em;
+  font-family: 'Quicksand';
+  width: 100%;
+  text-align: center;
+}
+#navBar .news {
+  background-color: #9eea6b;
+  text-shadow: 2px 2px 0px #66d11e;
+}
+#navBar .community {
+  background-color: #f8db1b;
+  text-shadow: 2px 2px 0px #bba306;
+}
+#navBar .gold {
+  background-color: #ffa71c;
+  text-shadow: 2px 2px 0px #c67900;
+}
+#navBar .gold h2 {
+  margin-top: 102px;
+}
+#navBar .partner {
+  background-color: #cd69f7;
+  text-shadow: 2px 2px 0px #a80cea;
+}
+#navBar .about {
+  background-color: #2b94f7;
+  text-shadow: 2px 2px 0px #0768c4;
+}
+#chat {
+  height: 100%;
+  width: 100%;
+}
+#chat label,
+#mainContainer label {
+  float: left;
+  margin-top: 10px;
+}
+#chat input {
+  float: left;
+  clear: both;
+  margin: 10px 0px 0px 0px;
+  width: 465px;
+}
+#chat .chatFlow {
+  height: 250px;
+}
+#chat .comments {
+  height: 50px;
+}
+#chat .button,
+#mainContainer button {
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 30%;
+}
+.sidebar {
+  float: right;
+  height: 99%;
+  width: 490px;
+  margin-left: 10px;
+}
+.sidebar .widget {
+/*
+     * No vendor prefix is needed with nib
+     */
+  height: 100%;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  background-color: #faf9f0;
+  -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+  box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+}
+.sidebar .widget h3 {
+  font-size: 1.5em;
+  color: #444;
+  font-family: 'Quicksand';
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ddd;
+  -webkit-border-radius: 2px 2px 0px 0px;
+  border-radius: 2px 2px 0px 0px;
+}
+.sidebar .widget p {
+  font-size: 1em;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
