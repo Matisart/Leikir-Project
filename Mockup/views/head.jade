@@ -1,0 +1,26 @@
+head
+    meta(charset='utf-8')
+    meta(name='description', content='Un espace dédié à votre cercle de connaissance, ni plus ni moins.')
+    meta(name='keywords', content='spotler,groupe,communaute,HTML,CSS,JavaScript')
+    meta(name='author', content='Mathieu SORIN')
+    meta(name='application-name', content='spotler')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    title #{title} - Spotler
+
+    link(type='text/css', rel='stylesheet', href='css/style.css')
+    script(type='application/javascript' src='lib/angular.min.js')
+    script(type='application/javascript' src='lib/jquery-2.1.1.js')
+
+    //- Firebase setting install
+    script(src='https://cdn.firebase.com/js/client/1.0.6/firebase.js')
+    //- Client side declaration for socket.io
+    script(type='application/javascript', src='/socket.io/socket.io.js')
+    
+    script(type='application/javascript')
+    	:coffee
+		# WIP Link Firebase and socket.io to client side
+		# bdd = new Firebase 'https://glowing-torch-6149.firebaseio.com/'
+
+        socket = io ->
+

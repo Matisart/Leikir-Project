@@ -1,0 +1,217 @@
+@import url('http://fonts.googleapis.com/css?family=Quicksand')
+
+/*
+ * Nib provides a CSS reset
+ */
+global-reset()
+
+/*
+ * Store some colors as variables
+ */
+main-color = #fa5b4d
+background-color = #faf9f0
+news-color = #9eea6b
+community-color = #ff8fa6
+gold-color = #ffa11c
+partner-color = #cd69E7
+about-color = #2b94e7
+
+body
+  font-family 'Georgia'
+  background-color background-color
+  color #444
+
+h1,h2,h3,h4,h5,h6
+    color #fff
+
+header
+  font-family 'Quicksand'
+  padding 50px 10px
+  text-align center
+  padding-top 0px
+  padding-bottom 10px
+  padding-left 0.5em
+  font-size 4em
+
+  /*
+   * `darken` is a Stylus built-in function
+   */
+  background-color main-color
+  text-shadow 10px 0px 80px darken(main-color, 30%)
+
+header h1 
+  display inline-block
+
+header strong
+  font-size 3em  
+  color  #faf9f0
+
+#mainContainer
+  position relative
+  width 960px
+  height 100%
+  margin auto
+
+#mainContainer input
+  float left
+  clear both
+  margin 10px 0px 0px 0px
+  width 100%
+
+form button
+  float left
+  margin-top 20px
+  width 40%
+
+#loging, #suscribe
+  width 300px
+  position absolute
+  left 330px
+  top -2em
+  // display none
+
+#loging button
+  margin-left 0px
+  width 40%
+
+#suscribe
+  display none
+
+.container 
+  width 960px
+  height 500px
+  margin 0px auto
+  overflow hidden
+  z-index -1
+
+.main-content
+  float left
+  width 460px
+
+  p
+    margin-bottom 20px
+
+p
+  line-height 1.8
+
+footer
+  width 500px
+  margin 50px auto
+  border-top 1px dotted #ccc
+  padding-top 5px
+  font-size 1em
+
+#logInfo
+    float right
+    text-align right
+    position relative
+    margin-right 2%
+    top -80px
+  
+#logInfo h4
+    font-size .2em
+    font-weight bold
+    margin-bottom 15px
+
+#navBar
+    display none
+    position relative
+    top -110px
+    height 192px
+    width 1100px
+    margin 0px auto
+
+#navBar h2
+    position absolute
+    margin-top 40%
+    font-size 2.6em
+    font-family 'Quicksand'
+    width 100%
+    text-align center
+
+#navBar div
+    position relative
+    height 192px
+    width 192px
+    border-radius 100%
+    display inline-block
+
+#navBar .news
+    background-color news-color
+    text-shadow 2px 2px 0px darken(news-color, 30%)
+
+#navBar .community
+    background-color community-color
+    text-shadow 2px 2px 0px darken(community-color, 30%)
+
+#navBar .gold
+    background-color gold-color
+    text-shadow 2px 2px 0px darken(gold-color, 30%)
+
+#navBar .gold h2
+    margin-top 30%
+
+#navBar .partner
+    background-color partner-color
+    text-shadow 2px 2px 0px darken(partner-color, 30%)
+
+#navBar .about
+    background-color about-color
+    text-shadow 2px 2px 0px darken(about-color, 30%)
+
+#chat
+    height 100%
+    width 100%
+
+#chat label, #mainContainer label
+    float left
+    margin-top 10px
+
+#chat input
+    float left
+    clear both
+    margin 10px 0px 0px 0px
+    width 465px
+
+#chat .chatFlow    
+    height 250px
+
+#chat .comments
+    height 50px
+
+#chat .button
+    float left
+    margin-left 10px
+    margin-top 20px
+    width 30%
+
+.sidebar
+  float right
+  height 99%
+  width 490px
+  margin-left 10px
+
+  .widget
+    /*
+     * No vendor prefix is needed with nib
+     */
+    height 100%
+    border-radius 3px
+    border 1px solid #ccc
+    padding-left 10px
+    background-color background-color
+    box-shadow inset 0px 0px 0px 3px rgba(#fff, 0.8), 0px 3px 0px -2px rgba(#000, 0.1)
+
+    h3
+      font-size 1.5em
+      color #444  
+      font-family 'Quicksand'
+      margin-top 10px
+      padding-bottom 10px
+      border-bottom 1px dotted #ddd
+      border-radius 2px 2px 0px 0px
+
+    p
+      font-size 1em
+      padding 0px 10px
+      margin-bottom 10px

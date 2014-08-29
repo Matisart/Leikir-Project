@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AngularJS Store</title>
+	<meta name="description" content="My first amgular application">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+
+	<!-- Bootstrap latest minified css -->
+	<link type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<!-- Set up an alias to an Angular controller (only avalaible in the body scope) -->
+<body class="container" ng-controller="StoreController as store">
+	<header>
+    	<h1 class="text-center">Flatlander Crafted Gems</h1>
+    	<h2 class="text-center">– an Angular store –</h2>
+    </header>
+
+		<!-- The filter syntax : {{ data | filter : filterOption }} see the angular doc for a complete list-->
+	<div class="list-group">
+		<!-- The ng-hide directive hide the div if a model property is true -->
+		<div class="list-group-item" ng-repeat="product in store.products | orderBy : '-price'" ng-hide="{{product.soldOut}}">
+			
+			<!-- Custom directives declare in app.js, theire implement the corresponding templates -->
+			<product-title></product-title>
+
+			<product-gallery></product-gallery>
+			
+			<product-panels></product-panels>
+		
+		</div>
+	</div>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+	<script type="application/javascript" src="app.js"></script>
+	<script type="application/javascript" src="product.js"></script>
+</body>
+</html>

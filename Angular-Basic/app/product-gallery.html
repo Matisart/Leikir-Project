@@ -1,0 +1,11 @@
+<div ng-show="product.images.length">
+  	<div class="img-wrap">
+  		<!-- For img loading use ng-source to prevent the browser to load the image before the expression evaluation -->
+  	  	<img style="display: block; margin: auto; height: 200px; margin: 0 auto 20px; width: 200px;" ng-src="{{product.images[gallery.current]}}" alt="{{product.name}} image" />
+  	</div>
+  	<ul class="img-thumbnails clearfix" style="margin: 0px auto 10px; width: 300px; padding: 0px">
+  	  	<li class="small-image pull-left thumbnail" style="border: 0px; max-width: 100px;" ng-repeat="image in product.images" ng-click="gallery.setCurrent($index)">
+  	    	<img ng-src="{{image}}" alt="{{product.name}} image" />
+  	  	</li>
+  	</ul>
+</div>

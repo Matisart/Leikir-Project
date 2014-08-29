@@ -1,0 +1,60 @@
+doctype html
+html(lang='fr')
+  //- include command is similar to PHP function and allow to join external .jade content
+  include includes/head.jade
+  body
+      header
+        div
+          h1 Sp
+          strong o
+          h1 tler
+      
+      div(id='mainContainer' style='top: 9em')
+
+        form(id='loging' method='POST' name='loging')
+          label(for='pseudo') Votre identifiant* :
+          input(id='pseudo' autofocus required)
+          label(for='pwd') Votre mot de passe* :
+          input(id='pwd' type='password' required)
+          button(type='submit' id='submitLog' name='submitLog' class='button' value='null') Se connecter
+        
+        form(id='suscribe' method='POST')
+          label(for='userId') Identifiant* :
+          input(id='userId' autofocus required)
+          label(for='userMail') Adresse mail* :
+          input(id='userMail' type='email' required)
+          label(for='pwd1') Mot de passe* :
+          input(id='pwd1' type='password' required)
+          label(for='pwd2') Contrôle du mot de passe* :
+          input(id='pwd2' type='password' required)
+          label(for='photo') Image de votre avatar (100px de côté) :
+          input(id='photo' type='file' accept='image/*')
+          button(type='submit' id='submitSus' name='submitSus' class='button') S'inscrire      
+        
+        div(id='navBar')
+          div(class='panel')
+            
+          div(class='news')
+            h2 Actu
+          div(class='panel')
+          div(class='community')
+            h2 Tribu
+          div(class='panel')
+          div(class='gold')
+            h2 Livre d'or
+          div(class='panel')
+          div(class='partner')
+            h2 Le web
+          div(class='panel')
+          div(class='about')
+            h2 Et moi
+          
+          //- .container
+          //-     .main-content
+          //-         block content
+          //-     .sidebar
+          //-         block sidebar
+
+      //- include includes/foot.jade
+
+    script(type='text/javascript' src='js/main.js')
